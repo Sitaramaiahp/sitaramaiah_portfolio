@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -16,11 +15,13 @@ const HeroSection = () => {
       <div className="max-w-4xl mx-auto text-center">
         <div className="fade-in" style={{ animationDelay: '0.2s' }}>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Hi, I'm a{' '}
+            Hi, I'm Sitaramaiah
+          </h1>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
             <span className="text-gradient">
               Full Stack Developer
             </span>
-          </h1>
+          </h2>
         </div>
         
         <div className="fade-in" style={{ animationDelay: '0.4s' }}>
