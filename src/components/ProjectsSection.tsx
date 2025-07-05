@@ -15,14 +15,6 @@ const ProjectsSection = () => {
       demo: 'https://demo.com',
     },
     {
-      name: 'Task Management App',
-      description: 'Collaborative project management tool with real-time updates and team collaboration features.',
-      tech: ['React', 'Django', 'PostgreSQL', 'Socket.io'],
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
-      github: 'https://github.com',
-      demo: 'https://demo.com',
-    },
-    {
       name: 'Weather Analytics Dashboard',
       description: 'Data visualization dashboard for weather patterns with interactive charts and forecasting.',
       tech: ['Vue.js', 'Python', 'FastAPI', 'Chart.js'],
@@ -37,23 +29,7 @@ const ProjectsSection = () => {
       image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=300&fit=crop',
       github: 'https://github.com',
       demo: 'https://demo.com',
-    },
-    {
-      name: 'AI-Powered Blog',
-      description: 'Content management system with AI writing assistance and automated SEO optimization.',
-      tech: ['Next.js', 'OpenAI', 'Prisma', 'PostgreSQL'],
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68e2c6f44d?w=500&h=300&fit=crop',
-      github: 'https://github.com',
-      demo: 'https://demo.com',
-    },
-    {
-      name: 'Fitness Tracking App',
-      description: 'Mobile-responsive fitness app with workout tracking and progress analytics.',
-      tech: ['React Native', 'Firebase', 'Node.js', 'Chart.js'],
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=300&fit=crop',
-      github: 'https://github.com',
-      demo: 'https://demo.com',
-    },
+    }
   ];
 
   return (

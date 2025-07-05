@@ -5,9 +5,9 @@ import { Github, Linkedin, Twitter } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/Sitaramaiahp', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/sitaramaiahp/', label: 'LinkedIn' },
+    { icon: Twitter, href: 'https://x.com/SitaramaiahR', label: 'Twitter' },
   ];
 
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
               Let's Build Something Amazing
             </h3>
             <p className="text-muted-foreground">
-              Full Stack Developer • 2024
+              Full Stack Developer • 2025
             </p>
           </div>
           
@@ -50,7 +50,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-8 border-t border-white/5 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 All rights reserved. Built with React, TypeScript & Tailwind CSS
+            © 2025 All rights reserved. Built with React, TypeScript & Tailwind CSS
           </p>
         </div>
       </div>

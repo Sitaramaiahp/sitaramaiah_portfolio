@@ -6,9 +6,14 @@ import { ArrowDown } from 'lucide-react';
 
 const ResumeSection = () => {
   const handleDownload = () => {
-    // This would trigger the actual resume download
-    console.log('Downloading resume...');
-  };
+  const link = document.createElement("a");
+  link.href = "/resume.pdf"; // Path to your resume in the public folder
+  link.download = "Sitaramaiah_Resume.pdf"; // Optional: filename for download
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  console.log('Downloading resume...');
+};
 
   return (
     <div className="min-h-screen py-20 px-6">
@@ -32,24 +37,23 @@ const ResumeSection = () => {
             Download Resume PDF
           </Button>
         </div>
-
-        <Card className="glass slide-up" style={{ animationDelay: '0.4s' }}>
+        
+        <Card className="glass slide-up w-full" style={{ animationDelay: '0.4s' }}>
           <CardContent className="p-8">
-            <div className="aspect-[8.5/11] bg-white/5 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-gradient">Resume Preview</h3>
-                <p className="text-muted-foreground">
-                  Resume viewer will be embedded here
-                </p>
-                <p className="text-sm text-muted-foreground mt-2">
-                  Click the download button above to get the PDF version
-                </p>
-              </div>
+            <div className="w-full h-full flex flex-col items-center justify-center">
+              <h3 className="text-xl font-semibold mb-4 text-gradient text-center">
+                Resume Preview
+              </h3>
+              <iframe
+              src="/resume.pdf"
+              width="100%"
+              height="700px"
+              title="Resume Preview"
+              className="rounded-lg shadow-lg border border-gray-200"
+            />
+              <p className="text-sm text-muted-foreground mt-2 px-4 text-center">
+                Click the download button above to get the PDF version
+              </p>
             </div>
           </CardContent>
         </Card>

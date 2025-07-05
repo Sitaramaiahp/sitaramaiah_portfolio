@@ -6,12 +6,16 @@ const AboutSection = () => {
   const techStack = [
     { name: 'Python', color: 'text-yellow-400' },
     { name: 'Django', color: 'text-green-400' },
-    { name: 'JavaScript', color: 'text-yellow-300' },
+    { name: 'Flask', color: 'text-blue-400' },
+    { name: 'MySQL', color: 'text-blue-400' },
+    { name: 'SQL', color: 'text-yellow-400' },
+    { name: 'MongoDB', color: 'text-green-400' },
+    { name: 'HTML', color: 'text-red-400' },
+    { name: 'CSS', color: 'text-blue-400' },
+    { name: 'JavaScript', color: 'text-yellow-400' },
     { name: 'React', color: 'text-blue-400' },
     { name: 'Node.js', color: 'text-green-400' },
-    { name: 'SQL', color: 'text-blue-300' },
-    { name: 'TypeScript', color: 'text-blue-400' },
-    { name: 'MongoDB', color: 'text-green-400' },
+    { name: 'Express.js', color: 'text-blue-400' },
   ];
 
   const experience = [

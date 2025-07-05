@@ -16,6 +16,7 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    alert("Message sent successfully!")
     // Handle form submission here
   };
 
@@ -110,7 +111,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Email</h4>
-                    <p className="text-muted-foreground">your.email@example.com</p>
+                    <p className="text-muted-foreground">sitaramaiah1473@gmail.com</p>
                   </div>
                 </div>
                 
